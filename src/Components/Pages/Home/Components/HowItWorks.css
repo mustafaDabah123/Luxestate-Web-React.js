@@ -1,0 +1,52 @@
+.card-how-work {
+    position: relative;
+    padding: 22px;
+    height: 320px;
+    overflow: hidden;
+    box-shadow: 0px -2px 10px -2px; 
+    color: var(--color-link) ; 
+    margin-bottom: 30px
+}
+.Items:first-of-type .card-how-work {
+    background: var(--color-main);
+    color: #fff;   
+}
+.Items:first-of-type .info-how-work a {
+    color: #fff;
+    border-bottom: 2px solid #fff ;
+    
+}
+.card-how-work .number {
+    position: absolute;
+    top: -104px;
+    left: -26px;
+    margin-bottom: 50px;
+    height: 100%;
+    
+}
+.card-how-work .number h2{
+    font-size: 185px;
+    font-weight: 900;
+    letter-spacing: -16px;
+}
+.info-how-work {
+    position: absolute;
+    top: 35%;
+}
+.info-how-work h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.info-how-work p {
+    font-weight: 200;
+    font-size: 13px;
+}
+.info-how-work a {
+    color: var(--color-link) ;
+    text-transform: capitalize;
+    border-bottom: 2px solid var(--color-link) ;
+    padding: 12px 0px;
+    text-decoration: none
+
+}

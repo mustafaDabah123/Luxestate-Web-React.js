@@ -1,0 +1,35 @@
+.row-adds {
+    margin-bottom: 50px;
+}
+.row-adds:nth-child(2) .img-adds {
+    order: 3
+}
+.row-adds:nth-child(2) .info-adds {
+    order: -1
+}
+.img-adds {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.info-adds h3 {
+    color:  var(--color-link);
+    margin-bottom:30px;
+    
+}
+.info-adds p {
+    color:  var(--color-link);
+    font-weight: 200;
+
+}
+@media (max-width:681px) {
+    .row-adds:nth-child(2) .img-adds {
+        order: 1
+    }
+    .row-adds:nth-child(2) .info-adds {
+        order: 2
+    }
+    .img-adds {
+        margin-bottom: 30px
+    }
+}

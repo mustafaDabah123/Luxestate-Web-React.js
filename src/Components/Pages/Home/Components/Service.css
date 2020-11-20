@@ -1,0 +1,15 @@
+.info-service h3 {
+    color: var(--color-link);
+    margin-bottom: 20px;
+}
+.info-service p {
+    color: var(--color-link);
+    font-weight: 200;
+    margin-bottom: 40px;
+    
+}
+.img-service {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px
+}

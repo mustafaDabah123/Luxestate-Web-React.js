@@ -1,0 +1,70 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.header::after {
+    content: '';
+    background-image:linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,0.8)) , url('/images/about1.jpg');
+    position: absolute;
+    width: 75%;
+    height: 91%;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+.hero-text {
+    height: 70vh
+}
+.hero-text h1 {
+    font-size: 70px;
+    color: var(--color-link);
+    margin-bottom: 20px
+}
+.hero-text form input {
+    padding: 15px 25px;
+    outline: none;
+    border: none ;
+    width: 100%;
+    position: relative;
+}
+.arrow-text {
+    position: absolute;
+    bottom: 17%;
+    transform: rotate(-90deg);
+    font-weight: 200; 
+}
+.info-header {
+    position: absolute;
+    background-color: var(--color-main);
+    bottom: 9%;
+    right: 0%;
+    text-align: center;
+    padding: 20px;
+}
+.info-header i {
+    color: #fff;
+    margin: 5px
+}
+.info-header p {
+    color: var(--color-link);
+    margin: 0 auto; 
+}
+@media (max-width:681px) {
+    .header::after {
+        width: 100%;
+    }
+    .arrow-text {
+        display: none
+    }
+}
+@media (max-width:400px) {
+    .hero-text h1 {
+        font-size: 42px
+    }
+    .info-header {
+        display: none
+    }
+}

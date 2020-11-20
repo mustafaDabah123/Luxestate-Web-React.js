@@ -1,0 +1,11 @@
+.agents {
+    background: #f6f5f4
+}
+.agents .icons-social p {
+    padding: 3px
+}
+@media (max-width:400px) {
+    .agents h4 {
+        font-size: 18px;
+    }
+}

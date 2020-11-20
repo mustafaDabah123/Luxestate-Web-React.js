@@ -1,0 +1,83 @@
+nav {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    height: 75px;
+    background: #fff;
+    z-index: 555;
+    box-shadow: 5px 2px 10px -5px;
+}
+
+.logo a {
+    color: var(--color-link);
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500; 
+}
+nav ul {
+    margin: 0 auto;
+}
+nav ul li a {
+    color: var(--color-link);
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+}
+.contact-nav {
+    padding: 10px;
+    align-items: baseline;
+
+}
+.join-us  a {
+    color: var(--color-link);
+    font-weight: 300;
+    margin-right: 10px
+
+}
+.contact-nav button {
+    font-size: 11px;
+    background: var(--color-main);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-link) ;
+    padding: 10px 20px
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: var(--color-link)
+}
+@media screen and (max-width: 1000px) {
+    nav .container {
+        flex-direction: column;
+        position: relative
+    }
+    nav ul {
+        flex-direction: column;
+        background: var(--color-main);
+        width: 100%;
+        position: absolute;
+        top: 67px;
+        left: -200%;
+        transition: all .5s ease;
+        border-radius: 5px;
+        z-index: 555;
+        padding: 10px
+    }
+    .contact-nav {
+        position: absolute;
+        top: 219px;
+        left: -100%;
+        transition: all .5s ease;
+        z-index: 555;
+
+    }
+    .active {
+        left: 0%;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
